@@ -1,0 +1,24 @@
+{
+  "name": "program",
+  "version": "1.0.0",
+  "description": "This is my second phase project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RookiemanLiu/program.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RookiemanLiu/program/issues"
+  },
+  "homepage": "https://github.com/RookiemanLiu/program#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
