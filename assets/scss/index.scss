@@ -213,7 +213,7 @@ $n-color: #0c8ed9;
                 background: url('../images/list/sprite.png') no-repeat;
 
                 &:hover {
-                    color: $n-color;
+                    color: #14a9ff;                
                 }
             }
             .icon {
@@ -221,18 +221,38 @@ $n-color: #0c8ed9;
             }
             .icon-music {
                 background-position: 0 -120px;
+
+                &:hover {
+                    background-position: 0 -102px;
+                }
             }
             .icon-live {
                 background-position: 0 -155px;
+
+                &:hover {
+                    background-position: 0 -137px;
+                }
             }
             .icon-man {
                 background-position: 0 -192px;
+
+                &:hover {
+                    background-position: 0 -174px;
+                }
             }
             .icon-game {
                 background-position: 0 -228px;
+
+                &:hover {
+                    background-position: 0 -210px;
+                }
             }
             .icon-store {
                 background-position: 0 -282px;
+
+                &:hover {
+                    background-position: 0 -246px;
+                }
             }
         }
     }
@@ -284,13 +304,13 @@ $n-color: #0c8ed9;
 
     .move {
         position: absolute;
-        top: 180px;
+        top: 50%;
         z-index: 3;
-        // display: none;
-        width: 50px;
-        height: 90px;
-        line-height: 100px;
-        background-color: rgba(0, 0, 0, .4);
+        display: none;
+        margin-top: -60px;
+        width: 60px;
+        height: 120px;
+        background: url('../images/list/sprite.png') no-repeat;
         cursor: pointer;
 
         i {
@@ -301,9 +321,19 @@ $n-color: #0c8ed9;
     }
     .carousel-left {
         left: 0;
+        background-position: 0 -755px;
+
+        &:hover {
+            background-position: 0 -880px;
+        }
     }
     .carousel-right {
         right: 0;
+        background-position: 0 -1130px;
+
+        &:hover {
+            background-position: 0 -1005px;
+        }
     }
 }
 .carousel-img {
@@ -594,7 +624,7 @@ $n-color: #0c8ed9;
     .leftbar {
         .big {
             margin-bottom: 10px;
-            padding-bottom: 10px;
+            padding-bottom: 20px;
             border-bottom: 1px solid #f0f0f0;
 
             button {
@@ -631,57 +661,56 @@ $n-color: #0c8ed9;
 }
 .second-left {
     position: relative;
+    margin-top: 0;
     height: 280px;
 
-    .left-list {
-        display: none;
-    }
-    .move {
-        display: block !important;
-    }
-    .left-list {
-        position: absolute;
-        top: 0;
-        left: 0;
+    ul li {
+        width: 650px;
+        height: 35px;
+        line-height: 35px;
 
-        li {
-            padding: 0 5px;
-            width: 100%;
-            height: 35px;
-            line-height: 35px;
-            font-size: 13px;
+        a {
+            display: block;
+            overflow: hidden;
+            position: relative;
+            padding: 0 9px;
+            color: #333;
 
-            .icon-dujia1 {
-                color: #ff7f0d;
+            .songName {
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
-            &:hover {
-                color: $n-color;
-                background-color: #f9f9f9;
+            .songTips {
+                display: inline-block;
+                margin: 12px 0 0 10px;
+                padding-left: 21px;
+                height: 12px;
+                background: url('../images/first.png') no-repeat 0 0;
             }
-            .icon-bofang,.icon-xiazai3 {
-                display: none;
-            }
-            .down {
-                position: absolute;
-                right: 5px;
-                display: inline;
+            .play {
+                display: inline-block;
+                float: right;
+
+                .s-icon {
+                    display: inline-block;
+                    background: url('../images/list/icon_splice.png') no-repeat;
+                }
+                .playBtn {
+                    width: 12px;
+                    height: 14px;
+                    background-position: 0 0;
+                }
+                .downloadBtn {
+                    width: 15px;
+                    height: 15px;
+                    background-position: -90px 0;
+                }
             }
         }
     }
 }
-.left-list li:hover {
-    .icon-bofang {
-        display: inline;
-        color: #333;
-    }
-    .icon-xiazai3 {
-        display: inline;
-        color: #333;
-    }
-    .icon-dujia1 {
-        display: none;
-    }
-}
+
+
 
 /* 新歌首发样式 end */
 

@@ -1,0 +1,643 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
+.search_input input, body, button, html {
+  font: 13px/1.5 \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+}
+
+/* 网页顶部栏目样式 start */
+.container {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 78px;
+}
+
+.header .topbar {
+  position: relative;
+  width: 1000px;
+  height: 78px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.header .topbar .image {
+  display: inline-block;
+}
+
+.header .topbar .image img {
+  vertical-align: -1px;
+}
+
+.header .topbar .search-wraper {
+  display: inline-block;
+  width: 300px;
+  height: 36px;
+  margin-top: 20px;
+  margin-left: 36px;
+}
+
+.search-input {
+  position: relative;
+  width: 298px;
+  height: 34px;
+  border: 1px solid #ccc;
+  line-height: 34px;
+}
+
+.search-input input {
+  position: absolute;
+  left: 14px;
+  top: 0;
+  width: 249px;
+  height: 24px;
+  line-height: 24px;
+  border: 0;
+  padding: 5px 0;
+  color: #666;
+  outline: none;
+}
+
+.search {
+  position: absolute;
+  right: 0;
+  height: 0;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.search .search-icon {
+  display: block;
+  margin: 9px auto;
+  width: 16px;
+  height: 16px;
+  background: url("../images/list/search.png") no-repeat;
+  background-position: -40px -56px;
+}
+
+.search .search-icon:hover {
+  background-position: -40px -86px;
+}
+
+.topbar .topnav {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 402px;
+  line-height: 78px;
+}
+
+.topnav .nav-box {
+  float: right;
+}
+
+.topnav .nav-box .top-list, .topnav .nav-box span, .topnav .nav-box .login {
+  float: left;
+}
+
+.topnav .nav-box span {
+  margin-right: 28px;
+  margin-left: 11px;
+  color: #e6e6e6;
+}
+
+.top-list li {
+  float: left;
+  width: 82px;
+  height: 19px;
+  text-align: center;
+}
+
+.top-list li a {
+  width: 52px;
+  height: 17px;
+  color: #777;
+  font-size: 100%;
+}
+
+.top-list li a:hover {
+  color: #169af3;
+}
+
+.login a {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login .login_btn {
+  color: #fff;
+  background-color: #169af3;
+}
+
+.login .sign_btn {
+  color: #777;
+}
+
+.login .sign_btn:hover {
+  color: #169af3;
+  border: 1px solid #169af3;
+}
+
+/* 网页顶部栏目样式 end */
+/* ------------------------------------------------------------------------------- */
+/* 网页顶部导航栏样式 start */
+.nav-wraper {
+  width: 100%;
+  height: 55px;
+  background-color: #2c323b;
+}
+
+.nav {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  line-height: 55px;
+  background-color: #ddd;
+}
+
+.nav ul li {
+  float: left;
+}
+
+.nav .nav-left li {
+  padding: 0 30px;
+}
+
+.nav .nav-left li:hover {
+  background-color: #0c8ed9;
+}
+
+.nav .nav-left li:nth-child(2) {
+  background-color: #0c8ed9;
+}
+
+.nav .nav-left .same {
+  display: block;
+  height: 100%;
+  color: #ddd;
+  font-size: 16px;
+}
+
+.nav .nav-left .more {
+  width: 53px;
+}
+
+.nav .nav-left .more .icon-arrow-up::before {
+  content: "\e604";
+}
+
+.nav .nav-left .active {
+  color: #fff;
+}
+
+.nav .nav-right {
+  display: inline-block;
+  float: right;
+  height: 35px;
+}
+
+.nav .nav-right li {
+  margin-left: 30px;
+  height: 100%;
+}
+
+.nav .nav-right li a {
+  padding-left: 20px;
+  color: #bbb;
+  font-size: 13px;
+  background: url("../images/list/sprite.png") no-repeat;
+}
+
+.nav .nav-right li a:hover {
+  color: #14a9ff;
+}
+
+.nav .nav-right li .icon {
+  vertical-align: middle;
+}
+
+.nav .nav-right li .icon-music {
+  background-position: 0 -120px;
+}
+
+.nav .nav-right li .icon-music:hover {
+  background-position: 0 -102px;
+}
+
+.nav .nav-right li .icon-live {
+  background-position: 0 -155px;
+}
+
+.nav .nav-right li .icon-live:hover {
+  background-position: 0 -137px;
+}
+
+.nav .nav-right li .icon-man {
+  background-position: 0 -192px;
+}
+
+.nav .nav-right li .icon-man:hover {
+  background-position: 0 -174px;
+}
+
+.nav .nav-right li .icon-game {
+  background-position: 0 -228px;
+}
+
+.nav .nav-right li .icon-game:hover {
+  background-position: 0 -210px;
+}
+
+.nav .nav-right li .icon-store {
+  background-position: 0 -282px;
+}
+
+.nav .nav-right li .icon-store:hover {
+  background-position: 0 -246px;
+}
+
+.nav .more-list {
+  position: absolute;
+  top: 55px;
+  left: 324px;
+  z-index: 3;
+  display: none;
+  width: 113px;
+  background-color: #252a32;
+}
+
+.nav .more-list li {
+  clear: both;
+  padding: 0;
+}
+
+.nav .more-list li a {
+  display: block;
+  width: 113px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  color: #ddd;
+}
+
+.nav .more-list li a:hover {
+  color: #fff;
+  background-color: #2d343d;
+}
+
+/* 网页顶部导航栏样式 end */
+/* ----------------------------------------------------------------------- */
+/* 网页主体内容 start */
+/* 左侧导航栏 start */
+.s-icon {
+  display: inline-block;
+  vertical-align: -1px;
+  background: url("../images/list/icon_splice.png") no-repeat;
+}
+
+.content-wrap {
+  position: relative;
+  margin: 40px auto;
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrap::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.content-wrap .current {
+  color: #fff;
+  background-color: #169af3;
+}
+
+.content-wrap .current:hover {
+  color: #fff;
+  background-color: #169af3;
+}
+
+.content-main {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 3px 0 20px;
+  width: 1000px;
+}
+
+.main-side {
+  overflow: hidden;
+  float: left;
+  width: 218px;
+  border: 1px solid #eee;
+}
+
+.sidebar-same {
+  overflow: hidden;
+  position: relative;
+}
+
+.sidebar-same h3 a {
+  display: block;
+  position: relative;
+  padding-left: 15px;
+  height: 45px;
+  color: #555;
+  line-height: 45px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sidebar-same h3 a .icon-up {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding-left: 9px;
+  height: 5px;
+  background-position: -450px -120px;
+}
+
+.sidebar-same ul li .front {
+  float: left;
+  margin: 10px 5px 0 0;
+  cursor: pointer;
+}
+
+.sidebar-same ul li a {
+  display: block;
+  position: relative;
+  margin-bottom: 4px;
+  padding-left: 15px;
+  height: 36px;
+  color: #555;
+  line-height: 36px;
+  font-size: 14px;
+}
+
+.sidebar-same ul li a:hover {
+  color: #288fe7;
+  background-color: #f5f8fb;
+}
+
+.sidebar-first {
+  border-top: 0 none;
+}
+
+/* 左侧导航栏 end */
+/* 右侧内容栏样式 start */
+.main-details {
+  margin: 15px 0 0 30px;
+  float: left;
+  width: 750px;
+  height: 100%;
+}
+
+.details-title {
+  position: relative;
+  margin-bottom: 24px;
+  height: 56px;
+  border-bottom: 1px dotted #cacaca;
+}
+
+.details-title h3 {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #333;
+  line-height: 100%;
+}
+
+.details-title .update {
+  color: #999;
+  font-size: 14px;
+}
+
+.details-title .playall-btn {
+  float: right;
+  margin-top: -6px;
+  font-size: 14px;
+}
+
+.details-title .playall-btn span {
+  position: relative;
+  padding: 7px 20px 7px 34px;
+  color: #fff;
+  background-color: #169af3;
+  border: 1px solid #169af3;
+  border-radius: 2px;
+}
+
+.details-title .playall-btn span .icon-play {
+  display: inline-block;
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  padding-left: 9px;
+  width: 2px;
+  height: 16px;
+  background: url("../images/list/play_icon.png") no-repeat;
+}
+
+.icon-checked, .icon-unchecked {
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.icon-checked {
+  background-position: -180px -180px;
+}
+
+.icon-unchecked {
+  background-position: -180px -150px;
+}
+
+.details-wrap .checkAll {
+  position: relative;
+  padding: 0 0 10px 10px;
+  color: #999;
+  font-size: 14px;
+}
+
+.details-list ul li {
+  position: relative;
+  padding: 0 10px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 0;
+  border-bottom: 1px solid #f2f2f2;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.details-list ul li .num {
+  margin-right: 10px;
+  color: #999;
+  font-size: 14px;
+}
+
+.details-list ul li .num strong {
+  font-family: Tahoma;
+  font-size: 18px;
+  color: #fe2c62;
+  font-weight: 400;
+}
+
+.details-list ul li .icon-tips {
+  margin-right: 10px;
+  padding-left: 17px;
+  vertical-align: 1px;
+  height: 9px;
+  background-position: -240px -240px;
+}
+
+.details-list ul li .song-name {
+  color: #333;
+  font-size: 14px;
+}
+
+.details-list ul li:hover {
+  background-color: #f5f8fb;
+}
+
+.details-list ul li:hover a {
+  color: #009af3;
+}
+
+.details-list ul li:hover .icon-play, .details-list ul li:hover .icon-down, .details-list ul li:hover .icon-share {
+  visibility: visible;
+}
+
+.share .icon-play, .share .icon-down, .share .icon-share {
+  margin-right: 10px;
+  visibility: hidden;
+}
+
+.share {
+  position: absolute;
+  right: 10px;
+  display: inline-block;
+  float: right;
+  padding-top: 6px;
+  height: 15px;
+  white-space: nowrap;
+}
+
+.share .icon-play {
+  width: 12px;
+  height: 14px;
+  background-position: 0 0;
+}
+
+.share .icon-play:hover {
+  background-position: 0 -30px;
+}
+
+.share .icon-down {
+  width: 16px;
+  height: 13px;
+  background-position: -90px 0;
+}
+
+.share .icon-down:hover {
+  background-position: -90px -30px;
+}
+
+.share .icon-share {
+  width: 16px;
+  height: 14px;
+  background-position: -300px 0;
+}
+
+.share .icon-share:hover {
+  background-position: -300px -30px;
+}
+
+.share .song-time {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #999;
+}
+
+.download {
+  width: 750px;
+  height: 120px;
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+  line-height: 120px;
+}
+
+.download a {
+  display: inline-block;
+  margin-left: 20px;
+  width: 108px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  background-color: #169af3;
+  border-radius: 3px;
+}
+
+/* 右侧内容栏样式 end */
+/* 网页主体内容 end */
+/* 网页底部信息栏样式 start */
+.footer {
+  width: 100%;
+  height: 289px;
+  color: #b1b3b9;
+  background-color: #2c323b;
+}
+
+.footer .f-links {
+  height: 49px;
+  text-align: center;
+  border-bottom: 1px solid #3d424a;
+}
+
+.footer .f-links a {
+  padding: 10px;
+  color: #b1b3b9;
+  font-size: 12px;
+  line-height: 49px;
+}
+
+.footer .f-links a:hover {
+  color: #169af3;
+}
+
+.footer .copyright {
+  margin: 20px auto 0;
+  width: 1000px;
+  color: #999;
+  font-size: 14px;
+}
+
+.footer .copyright p {
+  width: 1000px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.footer .copyright p a {
+  color: #999;
+}
+
+.footer .copyright p .icon-Shape {
+  color: #0c8ed9;
+}
+
+/* 网页底部信息栏样式 end */

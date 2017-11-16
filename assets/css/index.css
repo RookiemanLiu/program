@@ -219,7 +219,7 @@ a {
 }
 
 .nav .nav-right li a:hover {
-  color: #0c8ed9;
+  color: #14a9ff;
 }
 
 .nav .nav-right li .icon {
@@ -230,20 +230,40 @@ a {
   background-position: 0 -120px;
 }
 
+.nav .nav-right li .icon-music:hover {
+  background-position: 0 -102px;
+}
+
 .nav .nav-right li .icon-live {
   background-position: 0 -155px;
+}
+
+.nav .nav-right li .icon-live:hover {
+  background-position: 0 -137px;
 }
 
 .nav .nav-right li .icon-man {
   background-position: 0 -192px;
 }
 
+.nav .nav-right li .icon-man:hover {
+  background-position: 0 -174px;
+}
+
 .nav .nav-right li .icon-game {
   background-position: 0 -228px;
 }
 
+.nav .nav-right li .icon-game:hover {
+  background-position: 0 -210px;
+}
+
 .nav .nav-right li .icon-store {
   background-position: 0 -282px;
+}
+
+.nav .nav-right li .icon-store:hover {
+  background-position: 0 -246px;
 }
 
 .nav .more-list {
@@ -294,12 +314,13 @@ a {
 
 .carousel .move {
   position: absolute;
-  top: 180px;
+  top: 50%;
   z-index: 3;
-  width: 50px;
-  height: 90px;
-  line-height: 100px;
-  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  margin-top: -60px;
+  width: 60px;
+  height: 120px;
+  background: url("../images/list/sprite.png") no-repeat;
   cursor: pointer;
 }
 
@@ -311,10 +332,20 @@ a {
 
 .carousel .carousel-left {
   left: 0;
+  background-position: 0 -755px;
+}
+
+.carousel .carousel-left:hover {
+  background-position: 0 -880px;
 }
 
 .carousel .carousel-right {
   right: 0;
+  background-position: 0 -1130px;
+}
+
+.carousel .carousel-right:hover {
+  background-position: 0 -1005px;
 }
 
 .carousel-img .active {
@@ -618,7 +649,7 @@ a {
 
 .content-second .leftbar .big {
   margin-bottom: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #f0f0f0;
 }
 
@@ -657,62 +688,57 @@ a {
 
 .second-left {
   position: relative;
+  margin-top: 0;
   height: 280px;
 }
 
-.second-left .left-list {
-  display: none;
-}
-
-.second-left .move {
-  display: block !important;
-}
-
-.second-left .left-list {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.second-left .left-list li {
-  padding: 0 5px;
-  width: 100%;
+.second-left ul li {
+  width: 650px;
   height: 35px;
   line-height: 35px;
-  font-size: 13px;
 }
 
-.second-left .left-list li .icon-dujia1 {
-  color: #ff7f0d;
-}
-
-.second-left .left-list li:hover {
-  color: #0c8ed9;
-  background-color: #f9f9f9;
-}
-
-.second-left .left-list li .icon-bofang, .second-left .left-list li .icon-xiazai3 {
-  display: none;
-}
-
-.second-left .left-list li .down {
-  position: absolute;
-  right: 5px;
-  display: inline;
-}
-
-.left-list li:hover .icon-bofang {
-  display: inline;
+.second-left ul li a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding: 0 9px;
   color: #333;
 }
 
-.left-list li:hover .icon-xiazai3 {
-  display: inline;
-  color: #333;
+.second-left ul li a .songName {
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.left-list li:hover .icon-dujia1 {
-  display: none;
+.second-left ul li a .songTips {
+  display: inline-block;
+  margin: 12px 0 0 10px;
+  padding-left: 21px;
+  height: 12px;
+  background: url("../images/first.png") no-repeat 0 0;
+}
+
+.second-left ul li a .play {
+  display: inline-block;
+  float: right;
+}
+
+.second-left ul li a .play .s-icon {
+  display: inline-block;
+  background: url("../images/list/icon_splice.png") no-repeat;
+}
+
+.second-left ul li a .play .playBtn {
+  width: 12px;
+  height: 14px;
+  background-position: 0 0;
+}
+
+.second-left ul li a .play .downloadBtn {
+  width: 15px;
+  height: 15px;
+  background-position: -90px 0;
 }
 
 /* 新歌首发样式 end */
