@@ -1,0 +1,14 @@
+<MKM version="2.0" minAppVer="2.0.0" imageFileUrl="">
+  <Marks>
+    <RectMark x="240" y="240" color="16711680" offsetX="0" offsetY="0"/>
+    <RectMark x="180" y="150" color="16711680" offsetX="0" offsetY="0"/>
+    <RectMark x="300" y="60" color="16711680" offsetX="0" offsetY="0"/>
+    <RectMark x="300" y="0" color="16711680" offsetX="0" offsetY="0"/>
+    <RectMark x="570" y="0" color="16711680" offsetX="0" offsetY="0"/>
+    <RectMark x="90" y="0" color="16711680" offsetX="0" offsetY="0"/>
+    <RectMark x="0" y="30" color="16711680" offsetX="0" offsetY="0"/>
+    <RectMark x="90" y="30" color="16711680" offsetX="0" offsetY="0"/>
+    <RectMark x="300" y="30" color="16711680" offsetX="0" offsetY="0"/>
+    <RectMark x="180" y="180" color="16711680" offsetX="0" offsetY="0"/>
+  </Marks>
+</MKM>
