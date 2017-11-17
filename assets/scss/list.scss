@@ -175,6 +175,10 @@ $n-color: #0c8ed9;
 
             &:hover {
                 background-color: $n-color;
+
+                a {
+                    color: #fff;
+                }
             }
         }
         li:nth-child(2) {
@@ -348,6 +352,14 @@ $n-color: #0c8ed9;
             font-size: 16px;
             font-weight: 400;
 
+            .icon-down {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                padding-left: 9px;
+                height: 5px;
+                background-position: -480px -120px;
+            }
             .icon-up {
                 position: absolute;
                 top: 20px;
@@ -356,7 +368,14 @@ $n-color: #0c8ed9;
                 height: 5px;
                 background-position: -450px -120px;
             }
+
         }
+            &:hover .icon-up {
+                background-position: -450px -60px;
+            }
+            &:hover .icon-down {
+                background-position: -480px -60px;
+            }
     }
 
     ul li {
@@ -443,13 +462,13 @@ $n-color: #0c8ed9;
     height: 14px;
     cursor: pointer;
 }
-.icon-checked {
-    @extend %check;
-    background-position: -180px -180px;
-}
 .icon-unchecked {
     @extend %check;
     background-position: -180px -150px;
+}
+.icon-checked {
+    @extend %check;
+    background-position: -180px -180px;
 }
 .details-wrap {
     .checkAll {

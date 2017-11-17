@@ -177,6 +177,10 @@ a {
   background-color: #0c8ed9;
 }
 
+.nav .nav-left li:hover a {
+  color: #fff;
+}
+
 .nav .nav-left li:nth-child(2) {
   background-color: #0c8ed9;
 }
@@ -358,6 +362,15 @@ a {
   font-weight: 400;
 }
 
+.sidebar-same h3 a .icon-down {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding-left: 9px;
+  height: 5px;
+  background-position: -480px -120px;
+}
+
 .sidebar-same h3 a .icon-up {
   position: absolute;
   top: 20px;
@@ -365,6 +378,14 @@ a {
   padding-left: 9px;
   height: 5px;
   background-position: -450px -120px;
+}
+
+.sidebar-same h3:hover .icon-up {
+  background-position: -450px -60px;
+}
+
+.sidebar-same h3:hover .icon-down {
+  background-position: -480px -60px;
 }
 
 .sidebar-same ul li .front {
@@ -449,19 +470,19 @@ a {
   background: url("../images/list/play_icon.png") no-repeat;
 }
 
-.icon-checked, .icon-unchecked {
+.icon-unchecked, .icon-checked {
   margin-right: 10px;
   width: 14px;
   height: 14px;
   cursor: pointer;
 }
 
-.icon-checked {
-  background-position: -180px -180px;
-}
-
 .icon-unchecked {
   background-position: -180px -150px;
+}
+
+.icon-checked {
+  background-position: -180px -180px;
 }
 
 .details-wrap .checkAll {

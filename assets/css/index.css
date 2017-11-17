@@ -177,7 +177,11 @@ a {
   background-color: #0c8ed9;
 }
 
-.nav .nav-left li:first-child {
+.nav .nav-left li:hover a {
+  color: #fff;
+}
+
+.nav .nav-left > li:first-child {
   background-color: #0c8ed9;
 }
 
@@ -356,9 +360,12 @@ a {
   display: none;
   width: 100%;
   height: 445px;
+  cursor: pointer;
 }
 
 .carousel-img li a {
+  position: relative;
+  z-index: -1;
   display: block;
   text-align: center;
   line-height: 500px;
@@ -368,6 +375,7 @@ a {
   position: absolute;
   bottom: 80px;
   left: 0;
+  z-index: 5;
   width: 100%;
   height: 25px;
   line-height: 25px;
@@ -388,8 +396,8 @@ a {
 .carousel-nav .carousel-index li a {
   display: inline-block;
   margin: 0 7px;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   color: #999;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
@@ -397,8 +405,8 @@ a {
 }
 
 .carousel-nav .carousel-index li .active {
-  width: 13px;
-  height: 13px;
+  width: 11px;
+  height: 11px;
   border-radius: 50%;
   background-color: #fff;
 }
@@ -686,19 +694,18 @@ a {
   cursor: pointer;
 }
 
-.second-left {
-  position: relative;
+.songList ul {
+  display: none;
   margin-top: 0;
-  height: 280px;
 }
 
-.second-left ul li {
+.songList ul li {
   width: 650px;
   height: 35px;
   line-height: 35px;
 }
 
-.second-left ul li a {
+.songList ul li a {
   display: block;
   overflow: hidden;
   position: relative;
@@ -706,39 +713,128 @@ a {
   color: #333;
 }
 
-.second-left ul li a .songName {
+.songList ul li a .songName {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
-.second-left ul li a .songTips {
+.songList ul li a .songTips {
   display: inline-block;
-  margin: 12px 0 0 10px;
+  vertical-align: -2px;
+  margin-left: 10px;
   padding-left: 21px;
   height: 12px;
   background: url("../images/first.png") no-repeat 0 0;
 }
 
-.second-left ul li a .play {
+.songList ul li a .play {
   display: inline-block;
   float: right;
 }
 
-.second-left ul li a .play .s-icon {
+.songList ul li a .play .s-icon {
   display: inline-block;
+  vertical-align: -2px;
+  visibility: hidden;
+  padding: 0 5px;
   background: url("../images/list/icon_splice.png") no-repeat;
 }
 
-.second-left ul li a .play .playBtn {
+.songList ul li a .play .playBtn {
   width: 12px;
   height: 14px;
   background-position: 0 0;
 }
 
-.second-left ul li a .play .downloadBtn {
+.songList ul li a .play .playBtn:hover {
+  background-position: 0 -30px;
+}
+
+.songList ul li a .play .downloadBtn {
   width: 15px;
   height: 15px;
   background-position: -90px 0;
+}
+
+.songList ul li a .play .downloadBtn:hover {
+  background-position: -90px -30px;
+}
+
+.songList ul li a:hover {
+  background-color: #f5f8fb;
+}
+
+.songList ul li a:hover .songName, .songList ul li a:hover .songTime {
+  color: #009af3;
+}
+
+.songList ul li a:hover .songTips {
+  visibility: hidden;
+}
+
+.songList ul li a:hover .s-icon {
+  visibility: visible;
+}
+
+.second-left {
+  overflow: hidden;
+  position: relative;
+  height: 375px;
+}
+
+.second-left .songList {
+  overflow: hidden !important;
+  height: 280px;
+}
+
+.second-left .songList .u-active {
+  display: block;
+}
+
+.second-left .pages {
+  display: inline-block;
+  position: absolute;
+  bottom: 50px;
+  left: 295px;
+  user-select: none;
+}
+
+.second-left .pages .p-border {
+  background-position: 0 -14px;
+}
+
+.second-left .pages .n-border {
+  background-position: -13px 0;
+}
+
+.second-left .pages .prev {
+  background-position: 0 0;
+  height: 9px;
+}
+
+.second-left .pages .prev:hover {
+  background-position: 0 -14px;
+}
+
+.second-left .pages .next {
+  background-position: -13px -14px;
+}
+
+.second-left .pages .page {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 12px;
+  color: #8d8d8d;
+}
+
+.second-left .pages i {
+  display: inline-block;
+  margin-top: 5px;
+  text-indent: -999em;
+  width: 6px;
+  line-height: 9px;
+  background: url("../images/pageChange.jpg") no-repeat;
+  cursor: pointer;
 }
 
 /* 新歌首发样式 end */
@@ -937,6 +1033,7 @@ a {
 }
 
 .singer-img .singer-list li .singer-name {
+  overflow: hidden;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -945,6 +1042,8 @@ a {
   height: 25px;
   color: #fff;
   font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .singer-img .singer-list li:hover .singer-cover {

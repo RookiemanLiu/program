@@ -10,5 +10,7 @@
     <RectMark x="90" y="30" color="16711680" offsetX="0" offsetY="0"/>
     <RectMark x="300" y="30" color="16711680" offsetX="0" offsetY="0"/>
     <RectMark x="180" y="180" color="16711680" offsetX="0" offsetY="0"/>
+    <RectMark x="449" y="29" color="16711680" offsetX="0" offsetY="0"/>
+    <RectMark x="449" y="59" color="16711680" offsetX="0" offsetY="0"/>
   </Marks>
 </MKM>

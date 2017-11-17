@@ -175,9 +175,12 @@ $n-color: #0c8ed9;
 
             &:hover {
                 background-color: $n-color;
+                a {
+                    color: #fff;
+                }
             }
         }
-        li:first-child {
+        >li:first-child {
             background-color: $n-color;
         }
         .same {
@@ -345,8 +348,11 @@ $n-color: #0c8ed9;
     display: none;
     width: 100%;
     height: 445px;
+    cursor: pointer;
 
     a {
+        position: relative;
+        z-index: -1;
         display: block;
         text-align: center;
         line-height: 500px;
@@ -356,6 +362,7 @@ $n-color: #0c8ed9;
     position: absolute;
     bottom: 80px;
     left: 0;
+    z-index: 5;
     width: 100%;
     height: 25px;
     line-height: 25px;
@@ -373,16 +380,16 @@ $n-color: #0c8ed9;
             a {
                 display: inline-block;
                 margin: 0 7px;
-                width: 12px;
-                height: 12px;
+                width: 10px;
+                height: 10px;
                 color: #999;
                 background-color: rgba(0, 0, 0, .4);
                 border-radius: 50%;
                 vertical-align: middle;
             }
             .active {
-                width: 13px;
-                height: 13px;
+                width: 11px;
+                height: 11px;
                 border-radius: 50%;
                 background-color: #fff;
             }
@@ -659,12 +666,11 @@ $n-color: #0c8ed9;
         cursor: pointer;
     }
 }
-.second-left {
-    position: relative;
+ .songList ul {
+    display: none;
     margin-top: 0;
-    height: 280px;
-
-    ul li {
+    
+    li {
         width: 650px;
         height: 35px;
         line-height: 35px;
@@ -682,7 +688,8 @@ $n-color: #0c8ed9;
             }
             .songTips {
                 display: inline-block;
-                margin: 12px 0 0 10px;
+                vertical-align: -2px;
+                margin-left: 10px;
                 padding-left: 21px;
                 height: 12px;
                 background: url('../images/first.png') no-repeat 0 0;
@@ -693,19 +700,97 @@ $n-color: #0c8ed9;
 
                 .s-icon {
                     display: inline-block;
+                    vertical-align: -2px;
+                    visibility: hidden;
+                    padding: 0 5px;
                     background: url('../images/list/icon_splice.png') no-repeat;
                 }
                 .playBtn {
                     width: 12px;
                     height: 14px;
                     background-position: 0 0;
+
+                    &:hover {
+                        background-position: 0 -30px;
+                    }
                 }
                 .downloadBtn {
                     width: 15px;
                     height: 15px;
                     background-position: -90px 0;
+
+                    &:hover {
+                        background-position: -90px -30px;
+                    }
                 }
             }
+            &:hover {
+                background-color: #f5f8fb;
+                .songName,.songTime {
+                    color: #009af3;
+                }
+                .songTips {
+                    visibility: hidden;
+                }
+                .s-icon {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+.second-left {
+    overflow: hidden;
+    position: relative;
+    height: 375px;
+
+    .songList {
+        overflow: hidden !important;
+        height: 280px;
+
+        .u-active {
+            display: block;
+        }
+    }
+
+    .pages {
+        display: inline-block;
+        position: absolute;
+        bottom: 50px;
+        left: 295px;
+        user-select: none;
+        
+        .p-border {
+            background-position: 0 -14px;
+        }
+        .n-border {
+            background-position: -13px 0;
+        }
+        .prev {
+            background-position: 0 0;
+            height: 9px;
+
+            &:hover {
+                background-position: 0 -14px;
+            }
+        }
+        .next {
+            background-position: -13px -14px;
+        }
+        .page {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 12px;
+            color: #8d8d8d;
+        }
+        i {
+            display: inline-block;
+            margin-top: 5px;
+            text-indent: -999em;
+            width: 6px;
+            line-height: 9px;
+            background: url('../images/pageChange.jpg') no-repeat;
+            cursor: pointer;
         }
     }
 }
@@ -894,6 +979,7 @@ $n-color: #0c8ed9;
                 padding-right: 0;
             }
             .singer-name {
+                overflow: hidden;
                 position: absolute;
                 bottom: 0;
                 left: 0;
@@ -902,6 +988,8 @@ $n-color: #0c8ed9;
                 height: 25px;
                 color: #fff;
                 font-size: 14px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
             &:hover .singer-cover {
                 display: block;
