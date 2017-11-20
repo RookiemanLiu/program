@@ -1,0 +1,1113 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
+.search_input input, body, button, html {
+  font: 13px/1.5 \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+}
+
+/* 网页顶部栏目样式 start */
+.container {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 78px;
+}
+
+.header .topbar {
+  position: relative;
+  width: 1000px;
+  height: 78px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.header .topbar .image {
+  display: inline-block;
+}
+
+.header .topbar .image img {
+  vertical-align: -1px;
+}
+
+.header .topbar .search-wraper {
+  display: inline-block;
+  width: 300px;
+  height: 36px;
+  margin-top: 20px;
+  margin-left: 36px;
+}
+
+.search-input {
+  position: relative;
+  width: 298px;
+  height: 34px;
+  border: 1px solid #ccc;
+  line-height: 34px;
+}
+
+.search-input input {
+  position: absolute;
+  left: 14px;
+  top: 0;
+  width: 249px;
+  height: 24px;
+  line-height: 24px;
+  border: 0;
+  padding: 5px 0;
+  color: #666;
+  outline: none;
+}
+
+.search {
+  position: absolute;
+  right: 0;
+  height: 0;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.search .search-icon {
+  display: block;
+  margin: 9px auto;
+  width: 16px;
+  height: 16px;
+  background: url("../images/list/search.png") no-repeat;
+  background-position: -40px -56px;
+}
+
+.search .search-icon:hover {
+  background-position: -40px -86px;
+}
+
+.topbar .topnav {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  width: 402px;
+  line-height: 78px;
+}
+
+.topnav .nav-box {
+  float: right;
+}
+
+.topnav .nav-box .top-list, .topnav .nav-box span, .topnav .nav-box .login {
+  float: left;
+}
+
+.topnav .nav-box span {
+  margin-right: 28px;
+  margin-left: 11px;
+  color: #e6e6e6;
+}
+
+.top-list li {
+  float: left;
+  width: 82px;
+  height: 19px;
+  text-align: center;
+}
+
+.top-list li a {
+  width: 52px;
+  height: 17px;
+  color: #777;
+  font-size: 100%;
+}
+
+.top-list li a:hover {
+  color: #169af3;
+}
+
+.login a {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.login .login_btn {
+  color: #fff;
+  background-color: #169af3;
+}
+
+.login .sign_btn {
+  color: #777;
+}
+
+.login .sign_btn:hover {
+  color: #169af3;
+  border: 1px solid #169af3;
+}
+
+/* 网页顶部栏目样式 end */
+/* ------------------------------------------------------------------------------- */
+/* 网页顶部导航栏样式 start */
+.nav-wraper {
+  width: 100%;
+  height: 55px;
+  background-color: #2c323b;
+}
+
+.nav {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  line-height: 55px;
+  background-color: #ddd;
+}
+
+.nav ul li {
+  float: left;
+}
+
+.nav .nav-left li {
+  padding: 0 30px;
+}
+
+.nav .nav-left li:hover {
+  background-color: #0c8ed9;
+}
+
+.nav .nav-left li:hover a {
+  color: #fff;
+}
+
+.nav .nav-left .same {
+  display: block;
+  height: 100%;
+  color: #ddd;
+  font-size: 16px;
+}
+
+.nav .nav-left .more {
+  width: 53px;
+}
+
+.nav .nav-left .more .icon-arrow-up::before {
+  content: "\e604";
+}
+
+.nav .nav-left .active {
+  color: #fff;
+}
+
+.nav .nav-right {
+  display: inline-block;
+  float: right;
+  height: 35px;
+}
+
+.nav .nav-right li {
+  margin-left: 30px;
+  height: 100%;
+}
+
+.nav .nav-right li a {
+  padding-left: 20px;
+  color: #bbb;
+  font-size: 13px;
+  background: url("../images/list/sprite.png") no-repeat;
+}
+
+.nav .nav-right li a:hover {
+  color: #14a9ff;
+}
+
+.nav .nav-right li .icon {
+  vertical-align: middle;
+}
+
+.nav .nav-right li .icon-music {
+  background-position: 0 -120px;
+}
+
+.nav .nav-right li .icon-music:hover {
+  background-position: 0 -102px;
+}
+
+.nav .nav-right li .icon-live {
+  background-position: 0 -155px;
+}
+
+.nav .nav-right li .icon-live:hover {
+  background-position: 0 -137px;
+}
+
+.nav .nav-right li .icon-man {
+  background-position: 0 -192px;
+}
+
+.nav .nav-right li .icon-man:hover {
+  background-position: 0 -174px;
+}
+
+.nav .nav-right li .icon-game {
+  background-position: 0 -228px;
+}
+
+.nav .nav-right li .icon-game:hover {
+  background-position: 0 -210px;
+}
+
+.nav .nav-right li .icon-store {
+  background-position: 0 -282px;
+}
+
+.nav .nav-right li .icon-store:hover {
+  background-position: 0 -246px;
+}
+
+.nav .more-list {
+  position: absolute;
+  top: 55px;
+  left: 324px;
+  z-index: 3;
+  display: none;
+  width: 113px;
+  background-color: #252a32;
+}
+
+.nav .more-list li {
+  clear: both;
+  padding: 0;
+}
+
+.nav .more-list li a {
+  display: block;
+  width: 113px;
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  color: #ddd;
+}
+
+.nav .more-list li a:hover {
+  color: #fff;
+  background-color: #2d343d;
+}
+
+/* 网页顶部导航栏样式 end */
+/* ----------------------------------------------------------------------- */
+/* 网页主体内容样式 start */
+.content {
+  overflow-y: hidden;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 504px;
+  background: #000 no-repeat 100% 100%;
+  background-size: cover;
+}
+
+.bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 976px;
+  height: 504px;
+  opacity: .6;
+  filter: blur(90px);
+  background-size: cover;
+}
+
+.bg-mask {
+  opacity: .6;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.song-content {
+  margin-left: -390px;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  width: 840px;
+  height: 493px;
+}
+
+.song-img {
+  float: left;
+  margin-top: 10px;
+}
+
+.song-img img {
+  margin-bottom: 40px;
+}
+
+.song-img a {
+  display: block;
+  margin-left: 16px;
+  width: 230px;
+  height: 50px;
+  background: url("../images/downlaod_bg.png") no-repeat;
+  cursor: pointer;
+}
+
+.song-lyric {
+  float: left;
+  margin: 7px 0 0 116px;
+  width: 460px;
+  height: 500px;
+}
+
+.song-lyric .m-name {
+  font-size: 24px;
+  color: #fff;
+}
+
+.song-lyric .song-detail p {
+  display: inline-block;
+  padding-top: 9px;
+  width: 225px;
+  height: 24px;
+}
+
+.song-lyric .song-detail span {
+  height: 24px;
+  font-size: 15px;
+  color: #fff;
+  opacity: .6;
+}
+
+.song-lyric .song-detail a {
+  color: #fff;
+  font-size: 15px;
+}
+
+.song-lyric > .lyrics {
+  position: relative;
+  overflow: hidden;
+  margin-top: 25px;
+  width: 400px;
+  height: 280px;
+  opacity: .6;
+}
+
+.lyrics .lyrics-line {
+  position: absolute;
+  right: 0;
+  width: 10px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #616161;
+}
+
+.lyrics .lyric-content {
+  overflow-y: scroll;
+  margin-top: 25px;
+  width: 420px;
+  height: 280px;
+  opacity: .6;
+}
+
+.lyrics .lyric-content .lyrics {
+  overflow: hidden;
+  margin-top: 5px;
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  opacity: .6;
+  color: #fff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* 网页主体内容样式 end */
+/* 底部控制栏样式 start */
+.footer {
+  position: fixed;
+  bottom: -1px;
+  z-index: 10;
+  width: 100%;
+  height: 80px;
+}
+
+.footer .icon {
+  position: absolute;
+  display: block;
+  opacity: .8;
+  background: url("../images/btn.png") no-repeat;
+}
+
+.footer .play-color {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  opacity: .6;
+  box-shadow: 0 -10px 20px #403f3f;
+}
+
+.footer .play-control {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+  height: 80px;
+}
+
+.controls-left {
+  width: 160px;
+  height: 80px;
+}
+
+.controls-left .play-prev {
+  margin-top: 22px;
+  width: 36px;
+  height: 36px;
+  background-position: 0 -143px;
+}
+
+.controls-left .play-prev:hover {
+  background-position: -36px -143px;
+}
+
+.controls-left .play-pause {
+  margin: 10px 0 0 46px;
+  width: 60px;
+  height: 60px;
+}
+
+.controls-left .play-start {
+  display: block !important;
+  margin: 10px 0 0 46px;
+  width: 60px;
+  height: 60px;
+  background-position: 0 -60px;
+}
+
+.controls-left .play-next {
+  margin: 22px 0 0 117px;
+  width: 36px;
+  height: 36px;
+  background-position: -144px -143px;
+}
+
+.controls-left .play-next:hover {
+  background-position: -180px -143px;
+}
+
+.play-control img {
+  position: absolute;
+  left: 190px;
+  top: 10px;
+  width: 60px;
+  height: 60px;
+}
+
+/* -------------------- 进度条 -------------------- */
+.play-progress {
+  position: absolute;
+  top: 0;
+  margin-left: 270px;
+  width: 370px;
+  height: 100%;
+}
+
+.play-progress .sing-text {
+  padding-top: 18px;
+  width: 370px;
+  height: 42px;
+  color: #fff;
+  font-size: 12px;
+  opacity: .4;
+}
+
+.play-progress .sing-text .controls-name {
+  float: left;
+  width: 288px;
+  height: 24px;
+}
+
+.play-progress .sing-text .controls-name .song-name {
+  color: #c4c3c3;
+  font-size: 13px;
+}
+
+.play-progress .sing-text .control-dutation {
+  float: right;
+  width: 75px;
+  height: 24px;
+}
+
+.play-progress .play-bar {
+  position: relative;
+  width: 370px;
+  height: 3px;
+  opacity: .8;
+  background-color: #fff;
+  user-select: none;
+  cursor: pointer;
+}
+
+.play-progress .play-bar .play-dot {
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+.play-progress .play-bar .progress-bar {
+  width: 0;
+  height: 3px;
+  background-color: #0c8ed9;
+}
+
+/* ---------------------------------- */
+.controls-right {
+  position: absolute;
+  top: 0;
+  margin-left: 690px;
+  width: 260px;
+  height: 80px;
+}
+
+.controls-right .play-mode {
+  width: 260px;
+  height: 80px;
+}
+
+/* ---------------------------------- */
+.play-valume .song-valume, .play-mode .song-circulation, .play-mode .play-download .song-down, .play-share .song-share, .play-list .song-list {
+  margin-top: 32px;
+  width: 16px;
+  height: 16px;
+}
+
+.play-valume {
+  position: relative;
+}
+
+.play-valume .song-valume {
+  background-position: 0 -195px;
+}
+
+.play-valume .song-valume:hover {
+  background-position: -16px -195px;
+}
+
+.play-valume .disvalume {
+  display: none;
+  position: absolute;
+  top: -115px;
+  left: -8px;
+  width: 29px;
+  height: 155px;
+  background: url("../images/volume-panel.png") no-repeat;
+}
+
+.play-valume .disvalume .hivalume {
+  position: absolute;
+  top: 10px;
+  left: 13px;
+  width: 3px;
+  height: 90px;
+  background-color: #51555c;
+  border-radius: 10px;
+}
+
+.play-valume .disvalume .hivalume .shvalume {
+  position: absolute;
+  top: 0;
+  width: 3px;
+  height: 0;
+  background-color: #0c8ed9;
+}
+
+.play-valume .disvalume .hivalume .dots {
+  position: absolute;
+  top: 80px;
+  left: -3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0c8ed9;
+  cursor: pointer;
+}
+
+/* --------------------------------- */
+.play-pattern {
+  position: relative;
+}
+
+.play-pattern .pattern-box {
+  position: absolute;
+  top: -97px;
+  left: 6px;
+  display: none;
+  width: 100px;
+  height: 95px;
+  background: url("../images/play_style.png") no-repeat;
+}
+
+.play-pattern .pattern-box .pattern-active {
+  color: #16b5f0;
+}
+
+.play-pattern .pattern-box span {
+  height: 30px;
+  line-height: 30px;
+}
+
+.play-pattern .pattern-box a {
+  margin-right: 10px;
+  display: block;
+  float: right;
+  height: 30px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 25px;
+  border-bottom: 1px solid #30343d;
+}
+
+.play-pattern .pattern-box .layouts, .play-pattern .pattern-box .single, .play-pattern .pattern-box .random {
+  margin-left: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.play-pattern .pattern-box .layouts {
+  margin-top: 7px;
+  background-position: -80px -179px;
+}
+
+.play-pattern .pattern-box .single {
+  margin-top: 37px;
+  background-position: 0 -179px;
+}
+
+.play-pattern .pattern-box .random {
+  margin-top: 67px;
+  background-position: -128px -179px;
+}
+
+.play-mode .song-circulation {
+  margin-left: 46px;
+  background-position: -64px -179px;
+}
+
+.play-mode .song-circulation:hover {
+  background-position: -80px -179px;
+}
+
+.play-mode .play-download {
+  position: relative;
+}
+
+.play-mode .play-download .song-down {
+  margin-left: 92px;
+  background-position: -240px -32px;
+}
+
+.play-mode .play-download .song-down:hover {
+  background-position: -256px -32px;
+}
+
+.tips {
+  display: none;
+  position: absolute;
+  top: -380px;
+  left: -400px;
+  z-index: 9999;
+  width: 420px;
+  height: 247px;
+}
+
+.tips .tips-header {
+  height: 36px;
+  color: #fff;
+  background-color: #2c323b;
+}
+
+.tips .tips-header .tips-title {
+  display: inline-block;
+  padding-left: 10px;
+  width: 390px;
+  height: 36px;
+  color: #fff;
+  font-size: 13px;
+  line-height: 36px;
+}
+
+.tips .tips-header .close {
+  display: inline-block;
+  margin-top: 10px;
+  width: 16px;
+  height: 16px;
+  background-position: -241px -97px;
+}
+
+.tips .tips-header .close:hover {
+  background-position: -257px -97px;
+}
+
+.tips .tips-content {
+  height: 211px;
+  background-color: #fff;
+}
+
+.tips .tips-content .tips-text {
+  margin-left: 20px;
+  padding-top: 40px;
+  width: 380px;
+  height: 65px;
+}
+
+.tips .tips-content .tips-text p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.tips .tips-content .tips-text p .tips-txt {
+  display: inline-block;
+  height: 31px;
+  line-height: 31px;
+}
+
+.tips-footer {
+  width: 380px;
+  height: 32px;
+}
+
+.tips-footer a {
+  display: inline-block;
+  width: 102px;
+  height: 28px;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+  line-height: 28px;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+}
+
+.tips-footer a:first-child {
+  margin: 0 15px 0 90px;
+}
+
+.tips-footer a:hover {
+  color: #fff;
+  background-color: #0c8ed9;
+}
+
+/* ----------------------------------------------- */
+.play-share {
+  position: relative;
+}
+
+.play-share .song-share {
+  background-position: -240px 0;
+  margin-left: 136px;
+}
+
+.play-share .song-share:hover {
+  background-position: -256px 0;
+}
+
+.play-share .shareTo {
+  display: none;
+  position: absolute;
+  z-index: 30;
+  top: -380px;
+  left: -450px;
+  width: 475px;
+  height: 308px;
+  background-color: #fff;
+}
+
+.play-share .shareTo .share-header {
+  height: 36px;
+  color: #fff;
+  font-size: 15px;
+  background-color: #2c323b;
+}
+
+.play-share .shareTo .share-header .share-title {
+  display: inline-block;
+  padding-left: 10px;
+  width: 440px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.play-share .shareTo .share-header .close {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-top: 10px;
+  background-position: -241px -97px;
+}
+
+.play-share .shareTo .share-header .close:hover {
+  background-position: -257px -97px;
+}
+
+.share-content {
+  overflow: hidden;
+  width: 475px;
+  height: 272px;
+}
+
+.share-content .share-list {
+  position: relative;
+  width: 430px;
+  height: 230px;
+  margin: 20px auto;
+}
+
+.share-content .share-list li {
+  display: inline-block;
+  width: 62px;
+  height: 93px;
+  font-size: 14px;
+  color: #555;
+  margin: 70px 20px;
+}
+
+.share-content .share-list li > span {
+  width: 62px;
+  height: 62px;
+  cursor: pointer;
+}
+
+.share-content .share-list li span {
+  display: block;
+  text-align: center;
+}
+
+.share-list .share-weixin {
+  background: url("../images/share_weixin.png") no-repeat;
+}
+
+.share-list li .weixin-qr {
+  display: none;
+}
+
+.share-list .weixin-code {
+  position: absolute;
+  top: 52px;
+  left: 82px;
+  width: 125px;
+  height: 150px;
+  background: url("../images/weixin_bg.png") no-repeat;
+}
+
+.share-list .weixin-code img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 108px;
+  height: 105px;
+}
+
+.share-list .share-qq {
+  background: url("../images/share_qq.png") no-repeat;
+}
+
+.share-list .share-qqspace {
+  background: url("../images/share_qqspace.png") no-repeat;
+}
+
+.share-list .share-weibo {
+  background: url("../images/share_weibo.png") no-repeat;
+}
+
+/* ------------------------------------------- */
+.play-list {
+  position: relative;
+}
+
+.play-list .song-list {
+  position: absolute;
+  right: 10px;
+  top: -2px;
+  width: 60px;
+  height: 23px;
+  background-position: 0 -120px;
+}
+
+.play-list .song-list:hover {
+  background-position: -61px -120px;
+}
+
+.list-box {
+  position: absolute;
+  top: -410px;
+  left: -230px;
+  display: none;
+  width: 480px;
+  height: 410px;
+  background-color: #2f343b;
+}
+
+.list-box .list-header {
+  width: 480px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #2a2e35;
+}
+
+.list-box .list-header .list-title {
+  float: left;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #86898e;
+}
+
+.list-active {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  width: 75px;
+  height: 40px;
+}
+
+.list-active > span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-top: 22px;
+}
+
+.list-active .icon-delete {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-position: -241px -65px;
+}
+
+.list-active .icon-delete:hover {
+  background-position: -257px -65px;
+}
+
+.list-active .line {
+  position: absolute;
+  left: 36px;
+  opacity: .6;
+  background: url("../images/line.png") no-repeat;
+}
+
+.list-active .icon-close {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-position: -241px -97px;
+}
+
+.list-active .icon-close:hover {
+  background-position: -257px -97px;
+}
+
+.list-content {
+  margin-left: 15px;
+  width: 470px;
+  height: 360px;
+  font-size: 14px;
+}
+
+.list-content .con-list li {
+  display: block;
+  width: 450px;
+  height: 40px;
+  background-color: #40444b;
+}
+
+.list-content .con-list li:hover .li-menu {
+  display: block;
+}
+
+.list-content .con-list li > span {
+  display: inline-block;
+  width: 30px;
+  height: 39px;
+  color: #7c898c;
+  text-align: center;
+  line-height: 39px;
+}
+
+.list-content .con-list li div {
+  color: #7c898c;
+  display: inline-block;
+}
+
+.mc-name {
+  margin-left: 5px;
+  width: 254px;
+  height: 39px;
+  line-height: 39px;
+}
+
+.mc-name .sing-name {
+  color: #19b5f0;
+}
+
+.li-menu .icon-down, .li-menu .icon-share, .li-menu .icon-delete {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+.li-menu {
+  display: none;
+  position: relative;
+  float: right;
+  width: 95px;
+  height: 40px;
+}
+
+.li-menu .icon-down {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  background-position: -240px -32px;
+}
+
+.li-menu .icon-down:hover {
+  background-position: -256px -32px;
+}
+
+.li-menu .icon-share {
+  position: absolute;
+  left: 38px;
+  top: 12px;
+  background-position: -240px 0;
+}
+
+.li-menu .icon-share:hover {
+  background-position: -256px 0;
+}
+
+.li-menu .icon-delete {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  background-position: -241px -64px;
+}
+
+.li-menu .icon-delete:hover {
+  background-position: -257px -64px;
+}
+
+.con-list .singer-name {
+  margin-left: 15px;
+  font-size: 13px;
+}
+
+.con-list .song-time {
+  margin-left: 35px;
+  font-size: 12px;
+}
+
+/* 底部控制栏样式 end */

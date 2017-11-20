@@ -352,14 +352,6 @@ $n-color: #0c8ed9;
             font-size: 16px;
             font-weight: 400;
 
-            .icon-down {
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                padding-left: 9px;
-                height: 5px;
-                background-position: -480px -120px;
-            }
             .icon-up {
                 position: absolute;
                 top: 20px;
@@ -367,6 +359,14 @@ $n-color: #0c8ed9;
                 padding-left: 9px;
                 height: 5px;
                 background-position: -450px -120px;
+            }
+            .icon-down {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                padding-left: 9px;
+                height: 5px;
+                background-position: -480px -120px;
             }
 
         }

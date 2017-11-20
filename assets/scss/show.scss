@@ -1,0 +1,1049 @@
+a{
+    text-decoration:none;
+}
+.search_input input, body, button, html {
+    font: 13px/1.5 \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+}
+
+/* 网页顶部栏目样式 start */
+.container {
+    width: 100%;
+}
+
+$height: 78px;
+
+.header {
+    width: 100%;
+    height: $height;
+    .topbar {
+        position: relative;
+        width: 1000px;
+        height: $height;
+        margin: 0 auto;
+        // line-height: $height;
+        font-size: 14px;
+
+        .image {
+            display: inline-block;
+            img {
+                vertical-align: -1px;
+            }
+        }
+
+        .search-wraper {
+            display: inline-block;
+            width: 300px;
+            height: 36px;
+            margin-top: 20px;
+            margin-left: 36px;
+        }
+    }
+}
+.search-input {
+    position: relative;
+    width: 298px;
+    height: 34px;
+    border: 1px solid #ccc;
+    line-height: 34px;
+
+    input {
+        position: absolute;
+        left: 14px;
+        top: 0;
+        width: 249px;
+        height: 24px;
+        line-height: 24px;
+        border: 0;
+        padding: 5px 0;
+        color: #666;
+        outline: none;
+    }
+}
+.search {
+    position: absolute;
+    right: 0;
+    height: 0;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+
+    .search-icon {
+        display: block;
+        margin: 9px auto;
+        width: 16px;
+        height: 16px;
+        background: url('../images/list/search.png') no-repeat;
+        background-position: -40px -56px;
+
+        &:hover {
+            background-position: -40px -86px;
+        }
+    }
+}
+
+.topbar .topnav {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 402px;
+    line-height: $height;
+}
+.topnav {
+    .nav-box {
+        float: right;
+
+        .top-list,span,.login {
+            float: left;
+        }
+        span {
+            margin-right: 28px;
+            margin-left: 11px;
+            color: #e6e6e6;
+        }
+    }
+}
+
+$color: #169af3;
+.top-list {
+    li {
+        float: left;
+        width: 82px;
+        height: 19px;
+        text-align: center;
+
+        a {
+            width: 52px;
+            height: 17px;
+            color: #777;
+            font-size: 100%;
+
+            &:hover {
+                color: $color;
+            }
+        }
+    }
+}
+.login a {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.login {
+    .login_btn {
+        color: #fff;
+        background-color: $color;
+    }
+    .sign_btn {
+        color: #777;
+
+        &:hover {
+            color: $color;
+            border: 1px solid $color;
+        }
+    }
+}
+
+/* 网页顶部栏目样式 end */
+
+/* ------------------------------------------------------------------------------- */
+
+/* 网页顶部导航栏样式 start */
+.nav-wraper {
+    width: 100%;
+    height: 55px;
+    background-color: #2c323b;
+}
+$n-color: #0c8ed9;
+.nav {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    line-height: 55px;
+    background-color: #ddd;
+
+    ul li {
+        float: left;
+    }
+
+    .nav-left {
+        li {
+            padding: 0 30px;
+
+            &:hover {
+                background-color: $n-color;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        .same {
+            display: block;
+            height: 100%;
+            color: #ddd;
+            font-size: 16px;
+        }
+        .more {
+            width: 53px;
+
+            .icon-arrow-up::before {
+                content: "\e604";
+            }
+        }
+        .active {
+            color: #fff;
+        }
+    }
+    .nav-right {
+        display: inline-block;
+        float: right;
+        height: 35px;
+
+        li {
+            margin-left: 30px;
+            height: 100%;
+
+            a {
+                padding-left: 20px;
+                color: #bbb;
+                font-size: 13px;
+                background: url('../images/list/sprite.png') no-repeat;
+
+                &:hover {
+                    color: #14a9ff;                
+                }
+            }
+            .icon {
+                vertical-align: middle;
+            }
+            .icon-music {
+                background-position: 0 -120px;
+
+                &:hover {
+                    background-position: 0 -102px;
+                }
+            }
+            .icon-live {
+                background-position: 0 -155px;
+
+                &:hover {
+                    background-position: 0 -137px;
+                }
+            }
+            .icon-man {
+                background-position: 0 -192px;
+
+                &:hover {
+                    background-position: 0 -174px;
+                }
+            }
+            .icon-game {
+                background-position: 0 -228px;
+
+                &:hover {
+                    background-position: 0 -210px;
+                }
+            }
+            .icon-store {
+                background-position: 0 -282px;
+
+                &:hover {
+                    background-position: 0 -246px;
+                }
+            }
+        }
+    }
+    .more-list {
+        position: absolute;
+        top: 55px;
+        left: 324px;
+        z-index: 3;
+        display: none;
+        width: 113px;
+        background-color: #252a32;
+
+        li {
+            clear: both;
+            padding: 0;
+
+            a {
+                display: block;
+                width: 113px;
+                height: 37px;
+                line-height: 37px;
+                text-align: center;
+                color: #ddd;
+
+                &:hover {
+                    color: #fff;
+                    background-color: #2d343d;
+                }
+            }
+        }
+    }
+}
+/* 网页顶部导航栏样式 end */
+
+/* ----------------------------------------------------------------------- */
+
+/* 网页主体内容样式 start */
+.content {
+    overflow-y: hidden;
+    position: absolute;
+    z-index:-1;
+    width: 100%;
+    height: 504px;
+    background: #000 no-repeat 100% 100%;
+    background-size: cover;
+}
+.bg-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 976px;
+    height: 504px;
+    opacity: .6;
+    filter: blur(90px);
+    background-size: cover;
+}
+.bg-mask {
+    opacity: .6;
+    background-color: rgba(0, 0, 0, .35);
+}
+.song-content {
+    margin-left: -390px;
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    width: 840px;
+    height: 493px;
+}
+.song-img {
+    float: left;
+    margin-top: 10px;
+
+    img {
+        margin-bottom: 40px;
+    }
+    a {
+        display: block;
+        margin-left: 16px;
+        width: 230px;
+        height: 50px;
+        background: url('../images/downlaod_bg.png') no-repeat;
+        cursor: pointer;
+    }
+}
+.song-lyric {
+    float: left;
+    margin: 7px 0 0 116px;
+    width: 460px;
+    height: 500px;
+
+    .m-name {
+        font-size: 24px;
+        color: #fff;
+    }
+    .song-detail {
+        p {
+            display: inline-block;
+            padding-top: 9px;
+            width: 225px;
+            height: 24px;
+        }
+        span {
+            height: 24px;
+            font-size: 15px;
+            color: #fff;
+            opacity: .6;
+        }
+        a {
+            color: #fff;
+            font-size: 15px;
+        }
+    }
+    &>.lyrics {
+        position: relative;
+        overflow: hidden;
+        margin-top: 25px;
+        width: 400px;
+        height: 280px;
+        opacity: .6;
+    }
+}
+.lyrics {
+    .lyrics-line {
+        position: absolute;
+        right: 0;
+        width: 10px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #616161;
+    }
+    .lyric-content {
+        overflow-y: scroll;
+        margin-top: 25px;
+        width: 420px;
+        height: 280px;
+        opacity: .6;
+
+        .lyrics {
+            overflow: hidden;
+            margin-top: 5px;
+            width: 100%;
+            height: 34px;
+            line-height: 34px;
+            opacity: .6;
+            color: #fff;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+}
+/* 网页主体内容样式 end */
+/* 底部控制栏样式 start */
+.footer {
+    position: fixed;
+    bottom: -1px;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+
+    .icon {
+        position: absolute;
+        display: block;
+        opacity: .8;
+        background: url('../images/btn.png') no-repeat;
+    }
+    .play-color {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        opacity: .6;
+        box-shadow: 0 -10px 20px #403f3f;
+    }
+    .play-control {
+        position: relative;
+        margin: 0 auto;
+        width: 960px;
+        height: 80px;
+    }
+}
+.controls-left {
+    width: 160px;
+    height: 80px;
+
+    .play-prev {
+        margin-top: 22px;
+        width: 36px;
+        height: 36px;
+        background-position: 0 -143px;
+
+        &:hover {
+            background-position: -36px -143px;
+        }
+    }
+    .play-pause {
+        margin: 10px 0 0 46px;
+        width: 60px;
+        height: 60px;
+    }
+    .play-start {
+        display: block !important;
+        margin: 10px 0 0 46px;
+        width: 60px;
+        height: 60px;
+        background-position: 0 -60px;
+    }
+    .play-next {
+        margin: 22px 0 0 117px;
+        width: 36px;
+        height: 36px;
+        background-position: -144px -143px;
+    }
+    .play-next:hover {
+        background-position: -180px -143px;
+    }
+}
+.play-control img {
+    position: absolute;
+    left: 190px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+}
+/* -------------------- 进度条 -------------------- */
+.play-progress {
+    position: absolute;
+    top: 0;
+    margin-left: 270px;
+    width: 370px;
+    height: 100%;
+
+    .sing-text {
+        padding-top: 18px;
+        width: 370px;
+        height: 42px;
+        color: #fff;
+        font-size: 12px;
+        opacity: .4;
+
+        .controls-name {
+            float: left;
+            width: 288px;
+            height: 24px;
+
+            .song-name {
+                color: #c4c3c3;
+                font-size: 13px;
+            }
+        }
+        .control-dutation {
+            float: right;
+            width: 75px;
+            height: 24px;
+        }
+    }
+    .play-bar {
+        position: relative;
+        width: 370px;
+        height: 3px;
+        opacity: .8;
+        background-color: #fff;
+        user-select: none;
+        cursor: pointer;
+
+        .play-dot {
+            position: absolute;
+            top: -4px;
+            left: -7px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ddd;
+        }
+        .progress-bar {
+            width: 0;
+            height: 3px;
+            background-color: $n-color;
+        }
+    }
+    
+}
+/* ---------------------------------- */
+.controls-right {
+    position: absolute;
+    top: 0;
+    margin-left: 690px;
+    width: 260px;
+    height: 80px;
+
+    .play-mode {
+        width: 260px;
+        height: 80px;
+    }
+}
+/* ---------------------------------- */
+%song {
+    margin-top: 32px;
+    width: 16px;
+    height: 16px;
+}
+.play-valume {
+    position: relative;
+
+    .song-valume {
+        @extend %song;
+        background-position: 0 -195px;
+
+        &:hover {
+            background-position: -16px -195px;
+        }
+    }
+    .disvalume {
+        display: none;
+        position: absolute;
+        top: -115px;
+        left: -8px;
+        width: 29px;
+        height: 155px;
+        background: url("../images/volume-panel.png") no-repeat;
+
+        .hivalume {
+            position: absolute;
+            top: 10px;
+            left: 13px;
+            width: 3px;
+            height: 90px;
+            background-color: #51555c;
+            border-radius: 10px;
+
+            .shvalume {
+                position: absolute;
+                top: 0;
+                width: 3px;
+                height: 0;
+                background-color: $n-color;
+            }
+            .dots {
+                position: absolute;
+                top: 80px;
+                left: -3px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: $n-color;
+                cursor: pointer;
+            }
+        }
+    }
+}
+/* --------------------------------- */
+.play-pattern {
+    position: relative;
+
+    .pattern-box {
+        position: absolute;
+        top: -97px;
+        left: 6px;
+        display: none;
+        width: 100px;
+        height: 95px;
+        background: url('../images/play_style.png') no-repeat;
+
+        .pattern-active {
+            color: #16b5f0;
+        }
+        span {
+            height: 30px;
+            line-height: 30px;
+        }
+        a {
+            margin-right: 10px;
+            display: block;
+            float: right;
+            height: 30px;
+            color: #fff;
+            font-size: 13px;
+            line-height: 25px;
+            border-bottom: 1px solid #30343d;
+        }
+        .layouts,.single,.random {
+            margin-left: 10px;
+            width: 16px;
+            height: 16px;
+        }
+        .layouts {
+            margin-top: 7px;
+            background-position: -80px -179px;
+        }
+        .single {
+            margin-top: 37px;
+            background-position: 0 -179px;
+        }
+        .random {
+            margin-top: 67px;
+            background-position: -128px -179px;
+        }
+    }
+}
+.play-mode {
+    .song-circulation {
+        @extend %song;
+        margin-left: 46px;
+        background-position: -64px -179px;
+
+        &:hover {
+            background-position: -80px -179px;
+        }
+    }
+    .play-download {
+        position: relative;
+
+        .song-down {
+            @extend %song;
+            margin-left: 92px;
+            background-position: -240px -32px;
+
+            &:hover {
+                background-position: -256px -32px;
+            }
+        }
+    }
+}
+.tips {
+    display: none;
+    position: absolute;
+    top: -380px;
+    left: -400px;
+    z-index: 9999;
+    width: 420px;
+    height: 247px;
+
+    .tips-header {
+        height: 36px;
+        color: #fff;
+        background-color: #2c323b;
+
+        .tips-title {
+            display: inline-block;
+            padding-left: 10px;
+            width: 390px;
+            height: 36px;
+            color: #fff;
+            font-size: 13px;
+            line-height: 36px;
+        }
+        .close {
+            display: inline-block;
+            margin-top: 10px;
+            width: 16px;
+            height: 16px;
+            background-position: -241px -97px;
+
+            &:hover {
+                background-position: -257px -97px;
+            }
+        }
+    }
+    .tips-content {
+        height: 211px;
+        background-color: #fff;
+
+        .tips-text {
+            margin-left: 20px;
+            padding-top: 40px;
+            width: 380px;
+            height: 65px;
+
+            p {
+                font-size: 15px;
+                text-align: center;
+
+                .tips-txt {
+                    display: inline-block;
+                    height: 31px;
+                    line-height: 31px;
+                }
+            }
+        }
+    }
+}
+.tips-footer {
+    width: 380px;
+    height: 32px;
+
+    a {
+        display: inline-block;
+        width: 102px;
+        height: 28px;
+        color: #555;
+        font-size: 14px;
+        text-align: center;
+        line-height: 28px;
+        background-color: #fff;
+        border-radius: 2px;
+        border:1px solid #ddd;
+
+        &:first-child {
+            margin: 0 15px 0 90px;
+        }
+        &:hover {
+            color: #fff;
+            background-color: $n-color;
+        }
+    }
+}
+/* ----------------------------------------------- */
+.play-share {
+    position: relative;
+
+    .song-share {
+        @extend %song;
+        background-position: -240px 0;
+        margin-left: 136px;
+
+        &:hover {
+            background-position: -256px 0;
+        }
+    }
+    .shareTo {
+        display: none;
+        position: absolute;
+        z-index: 30;
+        top: -380px;
+        left: -450px;
+        width: 475px;
+        height: 308px;
+        background-color: #fff;
+
+        .share-header {
+            height: 36px;
+            color: #fff;
+            font-size: 15px;
+            background-color: #2c323b;
+
+            .share-title {
+                display: inline-block;
+                padding-left: 10px;
+                width: 440px;
+                height: 36px;
+                line-height: 36px;
+            }
+            .close {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin-top: 10px;
+                background-position: -241px -97px;
+
+                &:hover {
+                    background-position: -257px -97px;
+                }
+            }
+        }
+    }
+}
+.share-content {
+    overflow: hidden;
+    width: 475px;
+    height: 272px;
+
+    .share-list {
+        position: relative;
+        width: 430px;
+        height: 230px;
+        margin: 20px auto;
+
+        li {
+            display: inline-block;
+            width: 62px;
+            height: 93px;
+            font-size: 14px;
+            color: #555;
+            margin: 70px 20px;
+
+            &>span {
+                width: 62px;
+                height: 62px;
+                cursor: pointer;
+            }
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
+.share-list {
+    .share-weixin {
+        background: url("../images/share_weixin.png") no-repeat;
+    }
+    li .weixin-qr {
+        display: none;
+    }
+    .weixin-code {
+        position: absolute;
+        top: 52px;
+        left: 82px;
+        width: 125px;
+        height: 150px;
+        background: url("../images/weixin_bg.png") no-repeat;
+
+        img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 108px;
+            height: 105px;
+        }
+    }
+    .share-qq {
+        background: url("../images/share_qq.png") no-repeat;
+    }
+    .share-qqspace {
+        background: url("../images/share_qqspace.png") no-repeat;
+    }
+    .share-weibo {
+        background: url("../images/share_weibo.png") no-repeat;
+    }
+}
+/* ------------------------------------------- */
+.play-list {
+    position: relative;
+
+    .song-list {
+        @extend %song;
+        position: absolute;
+        right: 10px;
+        top: -2px;
+        width: 60px;
+        height: 23px;
+        background-position: 0 -120px;
+        &:hover {
+            background-position: -61px -120px;
+        }
+    }
+}
+.list-box {
+    position: absolute;
+    top: -410px;
+    left: -230px;
+    display: none;
+    width: 480px;
+    height: 410px;
+    background-color: #2f343b;
+
+    .list-header {
+        width: 480px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #2a2e35;
+
+        .list-title {
+            float: left;
+            padding-left: 10px;
+            font-size: 16px;
+            color: #86898e;
+        }
+    }
+}
+.list-active {
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    width: 75px;
+    height: 40px;
+
+    &>span {
+        display: block;
+        width: 16px;
+        height: 16px;
+        margin-top: 22px;
+    }
+    .icon-delete {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-position: -241px -65px;
+        &:hover {
+            background-position: -257px -65px;
+        }
+    }
+    .line {
+        position: absolute;
+        left: 36px;
+        opacity: .6;
+        background: url("../images/line.png") no-repeat;
+    }
+    .icon-close {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-position: -241px -97px;
+        &:hover {
+            background-position: -257px -97px;
+        }
+    }
+}
+.list-content {
+    margin-left: 15px;
+    width: 470px;
+    height: 360px;
+    font-size: 14px;
+
+    .con-list li{
+        display: block;
+        width: 450px;
+        height: 40px;
+        background-color: #40444b;
+
+        &:hover .li-menu {
+            display: block;
+        }
+
+        &>span {
+            display: inline-block;
+            width: 30px;
+            height: 39px;
+            color: #7c898c;
+            text-align: center;
+            line-height: 39px;
+        }
+        div {
+            color: #7c898c;
+            display: inline-block;
+        }
+    }
+}
+.mc-name {
+    margin-left: 5px;
+    width: 254px;
+    height: 39px;
+    line-height: 39px;
+
+    .sing-name {
+        color: #19b5f0;
+    }
+}
+%c-name {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.li-menu {
+    display: none;
+    position: relative;
+    float: right;
+    width: 95px;
+    height: 40px;
+
+    .icon-down {
+        @extend %c-name;
+        position: absolute;
+        left: 0;
+        top: 12px;
+        background-position: -240px -32px;
+
+        &:hover {
+            background-position: -256px -32px;
+        }
+    }
+    .icon-share {
+        @extend %c-name;
+        position: absolute;
+        left: 38px;
+        top: 12px;
+        background-position: -240px 0;
+
+        &:hover {
+            background-position: -256px 0;
+        }
+    }
+    .icon-delete {
+        @extend %c-name;
+        position: absolute;
+        right: 0;
+        top: 12px;
+        background-position: -241px -64px;
+        &:hover {
+            background-position: -257px -64px;
+        }
+    }
+}
+.con-list {
+    .singer-name {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+    .song-time {
+        margin-left: 35px;
+        font-size: 12px;
+    }
+}
+/* 底部控制栏样式 end */

@@ -362,15 +362,6 @@ a {
   font-weight: 400;
 }
 
-.sidebar-same h3 a .icon-down {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding-left: 9px;
-  height: 5px;
-  background-position: -480px -120px;
-}
-
 .sidebar-same h3 a .icon-up {
   position: absolute;
   top: 20px;
@@ -378,6 +369,15 @@ a {
   padding-left: 9px;
   height: 5px;
   background-position: -450px -120px;
+}
+
+.sidebar-same h3 a .icon-down {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding-left: 9px;
+  height: 5px;
+  background-position: -480px -120px;
 }
 
 .sidebar-same h3:hover .icon-up {

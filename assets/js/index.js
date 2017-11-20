@@ -78,6 +78,21 @@ $(function() {
         $('.dots span').eq($(this).index()).addClass('active').siblings().removeClass('active');
         $('.singer-img .singer-list').eq(3 * hIndex +  $(this).index()).show().siblings().hide();
     });
+
+    /* 直达顶部 */
+    $(window).scroll(function() {
+        var top = $(window).scrollTop();
+        if(top < 600) {
+            $('.to-top').hide();
+        }
+        if (top > 600 && top < 2180) {
+            $('.to-top').show();
+        } else if (top > 2180) {
+            $('.to-top').css('bottom', 330);
+        } else if (top < 600) {
+            $('.to-top').hide();
+        }
+    });
 })
 
 
@@ -107,7 +122,6 @@ $(function() {
         $('.pages .page .currentPage').text(pIndex);
         mValue = (pIndex - 1) * -280 + 'px';
         if ($('.songList ul').hasClass('u-active')) {
-            console.log(mValue);
             $('.u-active').css('marginTop', mValue);
         }
     })

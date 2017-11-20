@@ -1,0 +1,328 @@
+@charset "UTF-8";
+body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, p, a, image, input {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  color: #474747;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+}
+
+/* 网页顶部栏目样式 start */
+.header {
+  width: 100%;
+  height: 40px;
+}
+
+.header .header-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+  height: 100%;
+  background: url(../images/header_bg.jpg) no-repeat;
+}
+
+.header .header-wrap .login {
+  position: absolute;
+  right: 0;
+  width: 180px;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 40px;
+  text-align: center;
+}
+
+.header .header-wrap .login a {
+  color: #0c85cc;
+}
+
+.header .header-wrap .login a:hover {
+  text-decoration: underline;
+}
+
+.header .header-wrap .login a::after {
+  content: "|";
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #0c85cc;
+}
+
+.header .header-wrap .login .icon-shopping {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/header_bg.png) no-repeat;
+  background-position: 0 -309px;
+  vertical-align: middle;
+}
+
+/* 网页顶部栏目样式 end */
+/* 网页头部导航栏样式 start */
+.topbar {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #008ad4;
+}
+
+.topbar .topbar-content {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.topbar .topbar-content img {
+  float: left;
+  margin-top: 10px;
+  margin-right: 22px;
+}
+
+.topbar-list li {
+  float: left;
+}
+
+.topbar-list li a {
+  color: #fff;
+  font-size: 100%;
+  padding: 0 11px;
+  text-align: center;
+}
+
+.lists {
+  float: right;
+}
+
+/* 网页头部导航栏样式 end */
+/* 页面主体样式 start */
+.content-wrap {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.content {
+  margin: 40px 0 50px;
+  height: 680px;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.content .content-line {
+  height: 6px;
+  background-color: #54ade7;
+}
+
+.content .content-line .content-sign {
+  display: block;
+  width: 100%;
+  height: 84px;
+  line-height: 84px;
+}
+
+.content .content-line .content-sign span {
+  display: inline-block;
+  margin-top: 28px;
+  margin-left: 415px;
+  width: 128px;
+  height: 27px;
+  font-size: 0;
+  background: url(../images/kg_lgn_splice.png) no-repeat;
+  background-position: -350px -50px;
+}
+
+.content .sign-form {
+  height: 500px;
+}
+
+.sign-list {
+  margin: 20px auto;
+  width: 858px;
+  height: 384px;
+}
+
+.sign-list li {
+  height: 38px;
+  padding-bottom: 15px;
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.sign-list li .msg {
+  display: inline-block;
+  width: 300px;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.sign-list li .tips {
+  display: none;
+  width: 177px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.sign-list li .p-tips {
+  text-align: left;
+  line-height: 13px;
+}
+
+.sign-form input {
+  height: 38px;
+  line-height: 38px;
+  color: #7b7b7b;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+}
+
+.sign-form input:hover {
+  background-color: #e2f4ff;
+  border: 1px solid #54ade7;
+}
+
+.sign-form .text .sign-btn {
+  margin-left: 305px;
+  width: 92px;
+  height: 40px;
+  font-size: 21px;
+  color: #fff;
+  border: 0;
+  background-color: #3db9ec;
+  cursor: pointer;
+  outline: none;
+}
+
+.sign-form .text .sign-btn:hover {
+  background-color: #2085e5;
+}
+
+.sign-list .text .tel, .pas, .pass {
+  width: 291px;
+  height: 38px;
+}
+
+.sign-list .text .boy, .girl, .check {
+  line-height: 38px;
+  vertical-align: middle;
+}
+
+.sign-list .text .note-btn {
+  width: 68px;
+  height: 38px;
+  text-align: center;
+  line-height: 38px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #bbb;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.sign-list .text .str {
+  display: inline-block;
+  width: 55px;
+  height: 12px;
+  background-color: #e0e0e0;
+}
+
+.sign-list .pri {
+  margin-left: 67px;
+}
+
+.sign-list .txt {
+  margin-left: 160px;
+}
+
+.sign-list .txt .link {
+  display: inline-block;
+  width: 184px;
+}
+
+.sign-list .txt .link a {
+  display: inline-block;
+  width: 56px;
+  height: 17px;
+  color: #54ade7;
+  text-decoration: underline;
+}
+
+.sign-list .txt .user {
+  margin-right: -65px;
+}
+
+.sign-list .txt .sign-btn {
+  margin-left: 305px;
+  width: 92px;
+  height: 40px;
+  font-size: 21px;
+  color: #fff;
+  border: 0;
+  background-color: #3db9ec;
+}
+
+/* 页面主体样式 end */
+/* 页面底部信息栏样式 start */
+/* 网页底部信息栏样式 start */
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  height: 289px;
+  color: #b1b3b9;
+  background-color: #2c323b;
+}
+
+.footer .f-links {
+  height: 49px;
+  text-align: center;
+  border-bottom: 1px solid #3d424a;
+}
+
+.footer .f-links a {
+  padding: 10px;
+  color: #b1b3b9;
+  font-size: 12px;
+  line-height: 49px;
+}
+
+.footer .f-links a:hover {
+  color: #169af3;
+}
+
+.footer .copyright {
+  margin: 20px auto 0;
+  width: 1000px;
+  color: #999;
+  font-size: 14px;
+}
+
+.footer .copyright p {
+  width: 1000px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.footer .copyright p a {
+  color: #999;
+}
+
+.footer .copyright p .icon-Shape {
+  color: #0c8ed9;
+}
+
+/* 页面底部信息栏样式 end */
